@@ -1,0 +1,29 @@
+.field {
+  position: relative;
+  width: 800px;
+  height: 500px;
+  border: 1px solid black;
+  background: black;
+}
+
+#spacecraft {
+  width: 30px;
+  height: 30px;
+  background-color: blue;
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  caret-color: transparent;
+}
+
+.asteroid {
+  width: 20px;
+  height: 20px;
+  background-color: red;
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  caret-color: transparent;
+}
