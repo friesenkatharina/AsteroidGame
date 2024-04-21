@@ -8,39 +8,14 @@
   </head>
   <body>
     <div id="field">
-      <div id="asteroid0"></div>
-      <div id="asteroid1"></div>
-      <div id="asteroid2"></div>
-      <div id="asteroid3"></div>
-      <div id="asteroid4"></div>
-      <div id="asteroid5"></div>
+      <div id="spacecraft"></div>
+      <div id="asteroid0" class="asteroid"></div>
+      <div id="asteroid1" class="asteroid"></div>
+      <div id="asteroid2" class="asteroid"></div>
+      <div id="asteroid3" class="asteroid"></div>
+      <div id="asteroid4" class="asteroid"></div>
     </div>
 
-    <script>
-            let spacecraft = document.querySelector(#spacecraft)
-            let  x = 235
-            let asteroids = new Array(
-             {x:100, y:0},
-             {x:200, y:20},
-             {x:300, y:10},
-             {x:500, y:30},
-             {x:700, y:40}
-            );
-
-            let stepper = window.setInterval(moveAsteroids, 50)
-
-            spacecraft.style.left= x + 'px'
-
-            document.onkeydown = function (e) {
-              e = e || window.event
-              if (e.keyCode == 39) {
-      x = x + 15
-              }
-              if (e.keyCode == 37) {
-                  x = x -15
-              }
-              spacecraft.style.left = x + 'px'
-            }
-    </script>
+    <script src="./index.js"></script>
   </body>
 </html>
